@@ -1,0 +1,172 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6500809809866641127
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 221442107656893535, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_Name
+      value: YellowGrassTile
+      objectReference: {fileID: 0}
+    - target: {fileID: 286664162532549930, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4481fb7c91f0746468ffebad31b8a271, type: 3}
+    - target: {fileID: 286664162532549930, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 286664162532549930, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 286664162532549930, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 477813408528233287, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 09ee366ec2311b141abe5713d1c532f3, type: 3}
+    - target: {fileID: 480704513799621712, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2205551767218145612, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_Color.b
+      value: 0.16981131
+      objectReference: {fileID: 0}
+    - target: {fileID: 2205551767218145612, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_Color.g
+      value: 0.16981131
+      objectReference: {fileID: 0}
+    - target: {fileID: 2205551767218145612, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_Color.r
+      value: 0.16981131
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108518963883751126, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247863977579582709, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4966609870718409096, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c6a2f7625decd2740b3fc92d573b2f20, type: 3}
+    - target: {fileID: 6961145552244470348, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961145552244470348, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961145552244470348, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961145552244470348, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961145552244470348, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961145552244470348, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961145552244470348, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961145552244470348, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961145552244470348, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961145552244470348, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 221442107656893535, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2042642337375999858}
+  m_SourcePrefab: {fileID: 100100000, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+--- !u!212 &193795784091655015 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6379071973090760064, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+  m_PrefabInstance: {fileID: 6500809809866641127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &287953132404576650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6469570180960116589, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+  m_PrefabInstance: {fileID: 6500809809866641127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2000211370470941625 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4752891557720878430, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+  m_PrefabInstance: {fileID: 6500809809866641127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5007125951928378983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2255008817612679296, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+  m_PrefabInstance: {fileID: 6500809809866641127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6423606930552011448 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 221442107656893535, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+  m_PrefabInstance: {fileID: 6500809809866641127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2042642337375999858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6423606930552011448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d12d261530debc49ac0035298f8caca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileName: Yellow Grass
+  spriteRenderer: {fileID: 193795784091655015}
+  highlightColor: {fileID: 287953132404576650}
+  reachableIndicator: {fileID: 5007125951928378983}
+  attackableIndicator: {fileID: 2000211370470941625}
+  isWalkable: 0
+  variant1: {fileID: 6673290253845775031}
+  variant2: {fileID: 8585337534606924306}
+  variant3: {fileID: 8148183338878957617}
+  unitOnTile: {fileID: 0}
+--- !u!1 &6673290253845775031 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 480704513799621712, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+  m_PrefabInstance: {fileID: 6500809809866641127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8148183338878957617 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3108518963883751126, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+  m_PrefabInstance: {fileID: 6500809809866641127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8585337534606924306 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3247863977579582709, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+  m_PrefabInstance: {fileID: 6500809809866641127}
+  m_PrefabAsset: {fileID: 0}
