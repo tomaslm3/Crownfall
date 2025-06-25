@@ -10,10 +10,17 @@ public class GameManager : MonoBehaviour
 
     public GameState GameState;
 
+    [Header("Prefabs de unidades")]
     public BasePlayerUnit playerWarriorPrefab;
     public BasePlayerUnit playerArcherPrefab;
     public BaseEnemyUnit enemyWarriorPrefab;
     public BaseEnemyUnit enemyArcherPrefab;
+
+    [Header("Cantidad de unidades iniciales")]
+    [SerializeField] private int playerWarriorCount = 2;
+    [SerializeField] private int playerArcherCount = 1;
+    [SerializeField] private int enemyWarriorCount = 2;
+    [SerializeField] private int enemyArcherCount = 1;
 
     List<BasePlayerUnit> playerTroops;
     List<BaseEnemyUnit> enemyTroops;
@@ -30,17 +37,17 @@ public class GameManager : MonoBehaviour
 
     private void Start() {
 
-        playerTroops = new List<BasePlayerUnit> {
-            playerWarriorPrefab,
-            playerWarriorPrefab,
-            playerArcherPrefab
-        };
+        playerTroops = new List<BasePlayerUnit>();
+        for (int i = 0; i < playerWarriorCount; i++)
+            playerTroops.Add(playerWarriorPrefab);
+        for (int i = 0; i < playerArcherCount; i++)
+            playerTroops.Add(playerArcherPrefab);
 
-        enemyTroops = new List<BaseEnemyUnit> {
-            enemyWarriorPrefab,
-            enemyWarriorPrefab,
-            enemyArcherPrefab
-        };
+        enemyTroops = new List<BaseEnemyUnit>();
+        for (int i = 0; i < enemyWarriorCount; i++)
+            enemyTroops.Add(enemyWarriorPrefab);
+        for (int i = 0; i < enemyArcherCount; i++)
+            enemyTroops.Add(enemyArcherPrefab);
 
         ChangeState(GameState.GenerateGrid);
     }
