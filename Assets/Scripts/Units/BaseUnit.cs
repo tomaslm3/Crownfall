@@ -34,6 +34,9 @@ public class BaseUnit : MonoBehaviour {
     public bool IsInAttackState() => CurrentState == UnitState.Attacking;
     public int GetAttackRange() => attackRange;
     public int GetAttackDamage() => attackDamage;
+    public int GetMaxHealth() => maxHealth;
+    public int GetMaxMovementPoints() => maxMovementPoints;
+
     public bool hasAttackedThisTurn { get; private set; } = false;
 
     private void Awake() {
