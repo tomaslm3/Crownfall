@@ -143,7 +143,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1803288802986155789}
@@ -188,7 +188,6 @@ MonoBehaviour:
   weapon2AnchorPoint: {fileID: 3647340762805813744}
   unitType: 1
   allowedWeaponTypes: 01000000
-  arrowPrefab: {fileID: 3209151725817765516, guid: 4bf517040a192024591658c1246676d8, type: 3}
 --- !u!1 &8016283877872520827
 GameObject:
   m_ObjectHideFlags: 0
