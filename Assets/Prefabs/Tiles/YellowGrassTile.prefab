@@ -149,6 +149,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 193795784091655015}
   highlightColor: {fileID: 287953132404576650}
   reachableIndicator: {fileID: 5007125951928378983}
+  walkeableIndicator: {fileID: 8377823991670105307}
   attackableIndicator: {fileID: 2000211370470941625}
   isWalkable: 0
   variant1: {fileID: 6673290253845775031}
@@ -163,6 +164,11 @@ GameObject:
 --- !u!1 &8148183338878957617 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3108518963883751126, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
+  m_PrefabInstance: {fileID: 6500809809866641127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8377823991670105307 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3347166953365318204, guid: 9ad578d7307131045a909dcb41a27c93, type: 3}
   m_PrefabInstance: {fileID: 6500809809866641127}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &8585337534606924306 stripped
