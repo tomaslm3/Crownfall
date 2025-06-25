@@ -16,5 +16,6 @@ MonoBehaviour:
   weaponType: 2
   attackRange: 1
   attackDamage: 1
-  durability: 50
+  durability: 100
   animatorController: {fileID: 0}
+  attackSFX: {fileID: 0}

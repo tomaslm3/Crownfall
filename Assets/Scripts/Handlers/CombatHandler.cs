@@ -34,7 +34,9 @@ public static class CombatHandler {
 
     public static List<Tile> ShowAttackRange(BaseUnit unit) {
         var origin = unit.occupiedTile;
-        currentAttackableTiles = GetAttackableTiles(origin, unit.GetAttackRange());
+        int range = unit.weapon1 != null ? unit.weapon1.AttackRange : unit.GetAttackRange();
+        Debug.Log($"Unit {unit.unitName} attack range: {range}");
+        currentAttackableTiles = GetAttackableTiles(origin, range);
 
         foreach (var tile in currentAttackableTiles) {
             tile.SetAttackable();

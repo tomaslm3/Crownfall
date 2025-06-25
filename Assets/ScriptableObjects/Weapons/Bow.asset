@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: Bow
   weaponType: 1
-  attackRange: 5
-  attackDamage: 5
-  durability: 10
+  attackRange: 3
+  attackDamage: 8
+  durability: 100
   animatorController: {fileID: 9100000, guid: 5f1f24770d8dd674ca96a9689938d3d3, type: 2}
   attackSFX: {fileID: 8300000, guid: c070bef05f5413f42a45caa1a40adb38, type: 3}
