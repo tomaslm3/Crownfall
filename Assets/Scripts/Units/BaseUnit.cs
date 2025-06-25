@@ -49,7 +49,7 @@ public class BaseUnit : MonoBehaviour {
     }
 
 
-    public void EquipWeapon(BaseWeapon weaponPrefab, int slot = 1) {
+    public virtual void EquipWeapon(BaseWeapon weaponPrefab, int slot = 1) {
         if (weaponPrefab == null) return;
 
 
@@ -58,7 +58,6 @@ public class BaseUnit : MonoBehaviour {
             return;
         }
 
-        // Restricción para arqueros: solo un arco a la vez
         if (unitType == UnitType.Archer && weaponPrefab.weaponData.weaponType == WeaponType.Bow) {
             if ((slot == 1 && weapon2 != null && weapon2.weaponData.weaponType == WeaponType.Bow) ||
                 (slot == 2 && weapon1 != null && weapon1.weaponData.weaponType == WeaponType.Bow)) {
@@ -78,7 +77,9 @@ public class BaseUnit : MonoBehaviour {
             weapon2 = weaponInstance;
         else
             weapon1 = weaponInstance;
+
     }
+
 
     public void RemoveWeapon(int slot = 1) {
         BaseWeapon weaponToRemove = slot == 2 ? weapon2 : weapon1;

@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class BaseWeapon : MonoBehaviour {
@@ -7,6 +8,9 @@ public abstract class BaseWeapon : MonoBehaviour {
 
     [Header("Animación")]
     [SerializeField] protected Animator weaponAnimator;
+
+    [Header("Acciones del arma")]
+    public List<WeaponAction> actions = new List<WeaponAction>();
 
     private int currentDurability;
 

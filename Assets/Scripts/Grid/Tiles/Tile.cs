@@ -86,7 +86,7 @@ public abstract class Tile : MonoBehaviour
         if (unitOnTile != null) {
             if(unitOnTile.faction == Faction.Player) {
                 // Unidad del jugador
-                GridWorldManager.Instance.DeselectUnit();
+                GridWorldManager.Instance.DeselectUnit(UnitWorldManager.Instance.selectedPlayerUnit);
                 UnitWorldManager.Instance.SetSelectedPlayerUnit((BasePlayerUnit)unitOnTile);
                 GridWorldManager.Instance.ShowReachableTiles((BasePlayerUnit)unitOnTile);
                 SFXWorldManager.Instance.PlaySFX("unitSelected");

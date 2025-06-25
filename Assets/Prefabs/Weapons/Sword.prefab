@@ -121,3 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponData: {fileID: 11400000, guid: 83f98cf60e4126a4890cdcff6e66ab32, type: 2}
   weaponAnimator: {fileID: 589069891264728035}
+  actions:
+  - {fileID: 11400000, guid: 88bbd301eef55dd4fa12a9d130386fe4, type: 2}
+  pendingTarget: {fileID: 0}
+  SFXWorldManager: {fileID: 0}

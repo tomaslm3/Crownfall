@@ -4008,6 +4008,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sfxClips:
   - {fileID: 8300000, guid: 88199c2736c6bc4499c10a280ca3fe63, type: 3}
+  - {fileID: 8300000, guid: 4c5596eaae37457408ea50c950398813, type: 3}
 --- !u!82 &1372008354
 AudioSource:
   m_ObjectHideFlags: 0

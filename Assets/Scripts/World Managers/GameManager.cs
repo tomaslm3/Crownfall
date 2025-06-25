@@ -66,17 +66,7 @@ public class GameManager : MonoBehaviour
 
             if (UnitWorldManager.Instance.selectedPlayerUnit != null) {
 
-
-                if (Input.GetKeyDown(KeyCode.Alpha1) && UnitWorldManager.Instance.selectedPlayerUnit != null) {
-                    var selectedUnit = UnitWorldManager.Instance.selectedPlayerUnit;
-                    selectedUnit.SetState(UnitState.Attacking);
-                    CombatHandler.ClearAttackTiles();
-                    GridWorldManager.Instance.ClearReachableTiles();
-                    GridWorldManager.Instance.ClearSelectedDestinationPathTiles();
-                    CombatHandler.ShowAttackRange(selectedUnit);
-                }
-
-                if(UnitWorldManager.Instance.selectedPlayerUnit.CurrentState == UnitState.Idle) {
+                if (UnitWorldManager.Instance.selectedPlayerUnit.CurrentState == UnitState.Idle) {
                         if (Input.GetKeyDown(KeyCode.Space)) {
                             if (GridWorldManager.Instance.selectedDestinationPath != null) {
                                 foreach (var tile in GridWorldManager.Instance.selectedDestinationPath) {
@@ -90,11 +80,11 @@ public class GameManager : MonoBehaviour
 
                 if (Input.GetMouseButtonDown(1)) {
                     if (GameState == GameState.PlayerTurn) {
-                        if(UnitWorldManager.Instance.selectedPlayerUnit.CurrentState == UnitState.Attacking) {
+                        if (UnitWorldManager.Instance.selectedPlayerUnit.CurrentState == UnitState.Attacking) {
                             UnitWorldManager.Instance.selectedPlayerUnit.ResetState();
                             CombatHandler.ClearAttackTiles();
                         }
-                        GridWorldManager.Instance.DeselectUnit();
+                        GridWorldManager.Instance.DeselectUnit(UnitWorldManager.Instance.selectedPlayerUnit);
                     }
                 }
             }

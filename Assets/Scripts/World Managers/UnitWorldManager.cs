@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class UnitWorldManager : MonoBehaviour
@@ -89,8 +90,13 @@ public class UnitWorldManager : MonoBehaviour
     //}
 
     public void SetSelectedPlayerUnit(BasePlayerUnit unit) {
+        if (unit != null)
+            if (unit.CanAttack()) {
+                unit.ShowActionIcons();
+            }
         selectedPlayerUnit = unit;
         InfoUIWorldManager.Instance.ShowSelectedPLayerUnitPanel(unit);
+
     }
 
     public void ResetPlayerUnits() {

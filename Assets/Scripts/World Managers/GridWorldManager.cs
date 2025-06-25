@@ -140,7 +140,9 @@ public class GridWorldManager : MonoBehaviour {
         selectedDestinationPath.Clear();
     }
 
-    public void DeselectUnit() {
+    public void DeselectUnit(BasePlayerUnit unit) {
+        if (unit == null) return;
+        unit.HideActionIcons();
         UnitWorldManager.Instance.SetSelectedPlayerUnit(null);
         ClearReachableTiles();
         ClearSelectedDestinationPathTiles();
