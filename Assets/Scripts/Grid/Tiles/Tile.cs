@@ -89,6 +89,7 @@ public abstract class Tile : MonoBehaviour
                 GridWorldManager.Instance.DeselectUnit();
                 UnitWorldManager.Instance.SetSelectedPlayerUnit((BasePlayerUnit)unitOnTile);
                 GridWorldManager.Instance.ShowReachableTiles((BasePlayerUnit)unitOnTile);
+                SFXWorldManager.Instance.PlaySFX("unitSelected");
             } else {
                 // Unidad enemiga con Unidad del jugador ya seleccionada
                 if (UnitWorldManager.Instance.selectedPlayerUnit != null) {

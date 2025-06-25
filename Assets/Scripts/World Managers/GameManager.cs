@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
             if (UnitWorldManager.Instance.selectedPlayerUnit != null) {
 
 
-                if (Input.GetKeyDown(KeyCode.A) && UnitWorldManager.Instance.selectedPlayerUnit != null) {
+                if (Input.GetKeyDown(KeyCode.Alpha1) && UnitWorldManager.Instance.selectedPlayerUnit != null) {
                     var selectedUnit = UnitWorldManager.Instance.selectedPlayerUnit;
                     selectedUnit.SetState(UnitState.Attacking);
                     CombatHandler.ClearAttackTiles();

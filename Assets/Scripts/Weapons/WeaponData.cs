@@ -9,6 +9,8 @@ public class WeaponData : ScriptableObject
     public int attackDamage = 10;
     public int durability = 10;
     public RuntimeAnimatorController animatorController;
+
+    public AudioClip attackSFX;
 }
 
 public enum WeaponType {
