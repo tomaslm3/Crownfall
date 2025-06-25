@@ -89,6 +89,8 @@ public class UnitWorldManager : MonoBehaviour
     //}
 
     public void SetSelectedPlayerUnit(BasePlayerUnit unit) {
+        if (unit != null)
+            unit.ShowActionIcons();
         selectedPlayerUnit = unit;
         InfoUIWorldManager.Instance.ShowSelectedPLayerUnitPanel(unit);
     }

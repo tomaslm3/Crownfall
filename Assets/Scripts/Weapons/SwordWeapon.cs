@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class SwordWeapon : BaseWeapon
@@ -7,4 +8,5 @@ public class SwordWeapon : BaseWeapon
         base.Attack(attacker, target);
 
     }
+
 }

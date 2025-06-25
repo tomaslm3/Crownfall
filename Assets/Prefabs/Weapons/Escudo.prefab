@@ -99,3 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponData: {fileID: 11400000, guid: 8115f0c96984ea44c937523876b3c727, type: 2}
   weaponAnimator: {fileID: 0}
+  actions:
+  - {fileID: 11400000, guid: d77c27ed1ddea1649bd91add21c941f2, type: 2}
+  pendingTarget: {fileID: 0}
+  SFXWorldManager: {fileID: 0}
