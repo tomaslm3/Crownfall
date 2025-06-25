@@ -24,7 +24,7 @@ public class EnemiesBrain : MonoBehaviour {
 
         // 1. Calcular la distancia en tiles 
         float distancia = enemyTile.GetDistance(playerTile);
-        int rangoAtaque = unit.GetAttackRange();
+        int rangoAtaque = unit.weapon1 != null ? unit.weapon1.AttackRange : unit.GetAttackRange();
 
 
 
