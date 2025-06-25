@@ -12,7 +12,7 @@ public class BasePlayerUnit : BaseUnit
         foreach (var icon in currentActionIcons)
             Destroy(icon);
         currentActionIcons.Clear();
-        ¡
+        
         var allActions = new List<WeaponAction>();
         if (weapon1 != null) allActions.AddRange(weapon1.actions);
         if (weapon2 != null) allActions.AddRange(weapon2.actions);
@@ -23,6 +23,16 @@ public class BasePlayerUnit : BaseUnit
             handler.Setup(action, this);
             currentActionIcons.Add(iconGO);
         }
+    }
+    public void HideActionIcons() {
+        foreach (var icon in currentActionIcons)
+            Destroy(icon);
+        currentActionIcons.Clear();
+    }
+
+    public override void PerformAttack(BaseUnit target) {
+        base.PerformAttack(target);
+        HideActionIcons();
     }
 
 }

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ActionIconClickHandler : MonoBehaviour, IPointerClickHandler {
     public WeaponAction action;
@@ -8,11 +9,11 @@ public class ActionIconClickHandler : MonoBehaviour, IPointerClickHandler {
     public void Setup(WeaponAction action, BasePlayerUnit owner) {
         this.action = action;
         this.owner = owner;
-        var spriteRenderer = GetComponent<SpriteRenderer>();
-        if (spriteRenderer != null)
-            spriteRenderer.sprite = action.icon;
+        var image = GetComponent<Image>();
+        if (image != null)
+            image.sprite = action.icon;
         else
-            Debug.LogError("El prefab de acción no tiene un componente SpriteRenderer en el mismo GameObject.");
+            Debug.LogError("El prefab de acción no tiene un componente Image en el mismo GameObject.");
     }
 
     public void OnPointerClick(PointerEventData eventData) {
