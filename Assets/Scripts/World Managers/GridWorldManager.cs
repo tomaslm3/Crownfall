@@ -96,6 +96,10 @@ public class GridWorldManager : MonoBehaviour {
         }
 
         selectedDestinationPath = path;
+        foreach (var tilePath in selectedDestinationPath) {
+            tilePath.walkeableIndicator.SetActive(true);
+
+        }
     }
 
     /* Metodo encargado de seleccionar un tile aleatorio para el spawn del jugador.

@@ -12,6 +12,7 @@ public abstract class Tile : MonoBehaviour
     [SerializeField] protected SpriteRenderer spriteRenderer;
     [SerializeField] private GameObject highlightColor;
     [SerializeField] private GameObject reachableIndicator;
+    [SerializeField] public GameObject walkeableIndicator;
     [SerializeField] private GameObject attackableIndicator;
     [SerializeField] private bool isWalkable;
 
@@ -224,6 +225,7 @@ public abstract class Tile : MonoBehaviour
 
 
     public void RevertTile() {
+            walkeableIndicator.SetActive(false);
             reachableIndicator.SetActive(false);
             attackableIndicator.SetActive(false);
     }
