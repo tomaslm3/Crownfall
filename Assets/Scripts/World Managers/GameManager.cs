@@ -65,11 +65,11 @@ public class GameManager : MonoBehaviour
 
         if (TurnWorldManager.Instance.IsPlayerTurn) {
 
-            if (Input.GetKeyDown(KeyCode.E) && GameState == GameState.PlayerTurn) {
-                if (GameState == GameState.PlayerTurn) {
-                    TurnWorldManager.Instance.EndPlayerTurn();
-                }
-            }
+            //if (Input.GetKeyDown(KeyCode.E) && GameState == GameState.PlayerTurn) {
+            //    if (GameState == GameState.PlayerTurn) {
+            //        TurnWorldManager.Instance.EndPlayerTurn();
+            //    }
+            //}
 
             if (UnitWorldManager.Instance.selectedPlayerUnit != null) {
 

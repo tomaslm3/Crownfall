@@ -41,6 +41,12 @@ public class InfoUIWorldManager : MonoBehaviour
         }
     }
 
+    public void SkipTurn() {
+        if (GameManager.Instance.GameState == GameState.PlayerTurn) {
+            TurnWorldManager.Instance.EndPlayerTurn();
+        }
+    }
+
     //public void ShowSelectedTileInfoPanel(Tile tile) {
     //    TextMeshProUGUI[] textComponents = selectedTileInfoPanel.GetComponentsInChildren<TextMeshProUGUI>();
     //    TextMeshProUGUI[] textComponentsUnitOnTile = selectedTileUnitInfoPanel.GetComponentsInChildren<TextMeshProUGUI>();
