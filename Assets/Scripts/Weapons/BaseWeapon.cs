@@ -12,6 +12,8 @@ public abstract class BaseWeapon : MonoBehaviour {
 
     public BaseUnit pendingTarget;
 
+    public SFXWorldManager SFXWorldManager;
+
     public int AttackRange => weaponData != null ? weaponData.attackRange : 1;
     public int AttackDamage => weaponData != null ? weaponData.attackDamage : 10;
     public int Durability => currentDurability;
@@ -23,6 +25,8 @@ public abstract class BaseWeapon : MonoBehaviour {
             currentDurability = 10;
         if (weaponAnimator != null && weaponData != null && weaponData.animatorController != null)
             weaponAnimator.runtimeAnimatorController = weaponData.animatorController;
+
+        SFXWorldManager = FindObjectOfType<SFXWorldManager>();
     }
 
     /// <summary>
@@ -36,7 +40,7 @@ public abstract class BaseWeapon : MonoBehaviour {
         }
 
         if (weaponAnimator != null)
-            weaponAnimator.SetTrigger("Attack"); // Cambiado a Trigger
+            weaponAnimator.SetTrigger("Attack");
 
         pendingTarget = target;
         currentDurability--;
@@ -47,6 +51,7 @@ public abstract class BaseWeapon : MonoBehaviour {
     /// </summary>
     public void ApplyDamage() {
         if (pendingTarget != null) {
+            SFXWorldManager.PlaySFX(weaponData.attackSFX);
             pendingTarget.ReceiveDamage(AttackDamage);
             pendingTarget = null;
         }

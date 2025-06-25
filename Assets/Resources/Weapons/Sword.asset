@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Sword
   m_EditorClassIdentifier: 
   weaponName: Sword
+  weaponType: 0
   attackRange: 1
   attackDamage: 10
   durability: 10
   animatorController: {fileID: 9100000, guid: 1945ffffe3d188542aa52fd05b5f7caa, type: 2}
+  attackSFX: {fileID: 8300000, guid: d09ad530f121cd340a22bbc1629ebd9f, type: 3}

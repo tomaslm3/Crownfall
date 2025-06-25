@@ -7,6 +7,7 @@ public class BowWeapon : BaseWeapon {
 
     public override void Attack(BaseUnit attacker, BaseUnit target) {
         base.Attack(attacker, target);
+
     }
 
     /// <summary>
@@ -14,6 +15,7 @@ public class BowWeapon : BaseWeapon {
     /// </summary>
     public void ShootArrow() {
         var arrow = Instantiate(arrowPrefab);
+        SFXWorldManager.PlaySFX(weaponData.attackSFX);
         arrow.Init(transform.position, pendingTarget, AttackDamage);
     }
 }

@@ -10,6 +10,8 @@ public class BaseUnit : MonoBehaviour {
     public Tile occupiedTile;
     public Faction faction;
 
+    public SFXWorldManager SFXWorldManager;
+
     [Header("Movement")]
     [SerializeField] private int maxMovementPoints = 50;
     public int currentMovementPoints;
@@ -42,6 +44,8 @@ public class BaseUnit : MonoBehaviour {
     private void Awake() {
         currentMovementPoints = maxMovementPoints;
         currentHealth = maxHealth;
+
+        SFXWorldManager = FindObjectOfType<SFXWorldManager>();
     }
 
 
@@ -128,6 +132,7 @@ public class BaseUnit : MonoBehaviour {
     }
 
     public void ReceiveDamage(int damage) {
+        SFXWorldManager.PlaySFX("unitDamaged");
         currentHealth -= damage;
         Debug.Log($"{unitName} recibió {damage} de daño. Salud restante: {currentHealth}");
 
