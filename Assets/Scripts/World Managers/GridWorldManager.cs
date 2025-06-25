@@ -107,13 +107,13 @@ public class GridWorldManager : MonoBehaviour {
      * En un futuro deberia solo elegir aquellos tiles marcados como playerSpawn o similar.
      */
     public Tile GetPlayerSpawnTile() {
-        return tileDictionary.Where(tile => tile.Key.x < width / 2f && tile.Value.IsWalkable())
+        return tileDictionary.Where(tile => tile.Key.x < width / 2f && tile.Value.IsWalkable() && !tile.Value.unitOnTile)
             .OrderBy(Tile => Random.value)
             .First().Value;
     }
 
     public Tile GetEnemySpawnTile() {
-        return tileDictionary.Where(tile => tile.Key.x > width / 2f && tile.Value.IsWalkable())
+        return tileDictionary.Where(tile => tile.Key.x > width / 2f && tile.Value.IsWalkable() && !tile.Value.unitOnTile)
             .OrderBy(Tile => Random.value)
         .First().Value;
     }
