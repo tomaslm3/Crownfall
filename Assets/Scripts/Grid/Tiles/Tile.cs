@@ -35,7 +35,14 @@ public abstract class Tile : MonoBehaviour
         Coords = coords;
         transform.position = Coords.Pos;
 
-        int variantIndex = (int)((coords.Pos.x + coords.Pos.y) % 3);
+        float rand = UnityEngine.Random.value;
+        int variantIndex;
+        if (rand < 0.7f)
+            variantIndex = 0;
+        else if (rand < 0.85f)
+            variantIndex = 1;
+        else
+            variantIndex = 2;
         SetVariant(variantIndex);
     }
 
